@@ -1,20 +1,44 @@
 # This file is used to ignore files which are generated
 # ----------------------------------------------------------------------------
 
-*~
-*.autosave
+# C++ objects and libs
+*.slo
+*.lo
 *.a
-*.core
-*.moc
 *.o
 *.obj
-*.orig
-*.rej
+*.la
+*.lai
 *.so
 *.so.*
+*.dylib
+
+# Qt-es
+object_script.*.Release
+object_script.*.Debug
+*_plugin_import.cpp
+/.qmake.cache
+/.qmake.stash
+*.qbs.user*
+*.moc
+moc_*.cpp
+moc_*.h
+qrc_*.cpp
+ui_*.h
+*.qmlc
+*.jsc
+Makefile*
+*build-*
+*.qm
+*.prl
+
+*~
+*.core
+*.orig
+*.rej
 *_pch.h.cpp
 *_resource.rc
-*.qm
+*_qmlcache.qrc
 .#*
 *.*#
 core
@@ -23,17 +47,26 @@ tags
 .DS_Store
 .directory
 *.debug
-Makefile*
-*.prl
 *.app
-moc_*.cpp
-ui_*.h
-qrc_*.cpp
 Thumbs.db
 *.res
 *.rc
-/.qmake.cache
-/.qmake.stash
+
+# Qt unit tests
+target_wrapper.*
+
+# QtCreator
+*.autosave
+
+# QtCreator Qml
+*.qmlproject.user
+*.qmlproject.user.*
+
+# QtCreator CMake
+CMakeLists.txt.user*
+
+# QtCreator local machine specific files for imported projects
+*creator.user*
 
 # qtcreator generated files
 *.pro.user*
