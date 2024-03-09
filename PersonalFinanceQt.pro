@@ -8,7 +8,8 @@ CONFIG -= app_bundle
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
-        main.cpp
+    src/main.cpp \
+    src/settings/text.cpp
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
@@ -18,3 +19,9 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 DISTFILES += \
     .gitignore \
     README.md
+
+HEADERS += \
+    src/settings/text.h
+
+RESOURCES += \
+    fonts.qrc
