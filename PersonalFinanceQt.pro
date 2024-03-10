@@ -9,6 +9,7 @@ CONFIG -= app_bundle
 
 SOURCES += \
     src/main.cpp \
+    src/model/modelexception.cpp \
     src/settings/text.cpp
 
 # Default rules for deployment.
@@ -21,6 +22,8 @@ DISTFILES += \
     README.md
 
 HEADERS += \
+    src/model/icommon.h \
+    src/model/modelexception.h \
     src/settings/text.h
 
 RESOURCES += \
