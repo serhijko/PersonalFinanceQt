@@ -9,7 +9,12 @@ CONFIG -= app_bundle
 
 SOURCES += \
     src/main.cpp \
+    src/model/account.cpp \
+    src/model/article.cpp \
+    src/model/currency.cpp \
     src/model/modelexception.cpp \
+    src/model/transaction.cpp \
+    src/model/transfer.cpp \
     src/settings/text.cpp
 
 # Default rules for deployment.
@@ -22,8 +27,13 @@ DISTFILES += \
     README.md
 
 HEADERS += \
+    src/model/account.h \
+    src/model/article.h \
+    src/model/currency.h \
     src/model/icommon.h \
     src/model/modelexception.h \
+    src/model/transaction.h \
+    src/model/transfer.h \
     src/settings/text.h
 
 RESOURCES += \
