@@ -12,6 +12,7 @@ SOURCES += \
     src/model/account.cpp \
     src/model/article.cpp \
     src/model/currency.cpp \
+    src/model/filter.cpp \
     src/model/modelexception.cpp \
     src/model/transaction.cpp \
     src/model/transfer.cpp \
@@ -30,6 +31,7 @@ HEADERS += \
     src/model/account.h \
     src/model/article.h \
     src/model/currency.h \
+    src/model/filter.h \
     src/model/icommon.h \
     src/model/modelexception.h \
     src/model/transaction.h \
